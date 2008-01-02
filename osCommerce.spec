@@ -14,6 +14,7 @@ URL:		http://www.oscommerce.com/
 Source0:	oscommerce-2.2MS3-%{snap}.tar.bz2
 #Source2:	tep-docs-20030218.tar.bz2
 Requires:	webserver mysqlserver php-common mod_php php-mysql
+BuildRoot:	%{_tmppath}/%{name}-%{version}-buildroot
 BuildArch:	noarch
 
 %description
