@@ -2,7 +2,7 @@
 %define teproot /var/www/html/%{name}
 %define _requires_exceptions pear(includes/local/configure.php)
 
-Summary:	Open sourced e-commerce solution (aka. "tep")
+Summary:	E-commerce solution (aka. "tep")
 Name:		osCommerce
 Version:	2.2
 Release:	%mkrel 1.%{snap}_MS3.3
