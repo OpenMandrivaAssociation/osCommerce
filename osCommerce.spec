@@ -5,7 +5,7 @@
 Summary:	E-commerce solution (aka. "tep")
 Name:		osCommerce
 Version:	2.2
-Release:	%mkrel 1.%{snap}_MS3.4
+Release:	%mkrel 1.%{snap}_MS3.5
 License:	GPL
 Group:		System/Servers
 URL:		http://www.oscommerce.com/
@@ -13,9 +13,10 @@ URL:		http://www.oscommerce.com/
 #Source1:	http://telia.dl.sourceforge.net/sourceforge/tep/oscommerce-2.2ms1.tar.gz.sig
 Source0:	oscommerce-2.2MS3-%{snap}.tar.bz2
 #Source2:	tep-docs-20030218.tar.bz2
-Requires:	webserver mysqlserver php-common mod_php php-mysql
-BuildRoot:	%{_tmppath}/%{name}-%{version}-buildroot
+Requires:	mod_php
+Requires:	php-mysql
 BuildArch:	noarch
+BuildRoot:	%{_tmppath}/%{name}-%{version}
 
 %description
 osCommerce is an open source e-commerce solution under on going
@@ -73,7 +74,7 @@ rm -rf catalog/extras/win32
 rm -f tep-docs/documentation/install_win32.php
 
 %install
-[ "%{buildroot}" != "/" ] && rm -rf %{buildroot}
+rm -rf %{buildroot}
 
 install -d %{buildroot}%{teproot}
 
@@ -102,7 +103,7 @@ cp -ar catalog/extras .
 #ln -s default.php %{buildroot}%{teproot}/index.php
 
 %clean
-[ "%{buildroot}" != "/" ] && rm -rf %{buildroot}
+rm -rf %{buildroot}
 
 %files
 %defattr(-, root, root)
