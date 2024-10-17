@@ -8,7 +8,7 @@ Version:	2.2
 Release:	%mkrel 1.%{snap}_MS3.6
 License:	GPL
 Group:		System/Servers
-URL:		http://www.oscommerce.com/
+URL:		https://www.oscommerce.com/
 #Source0:	http://telia.dl.sourceforge.net/sourceforge/tep/oscommerce-2.2ms1.tar.gz
 #Source1:	http://telia.dl.sourceforge.net/sourceforge/tep/oscommerce-2.2ms1.tar.gz.sig
 Source0:	oscommerce-2.2MS3-%{snap}.tar.bz2
