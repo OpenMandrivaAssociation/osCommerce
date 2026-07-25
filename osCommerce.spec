@@ -5,7 +5,7 @@
 Summary:	E-commerce solution (aka. "tep")
 Name:		osCommerce
 Version:	2.2
-Release:	%mkrel 1.%{snap}_MS3.6
+Release:	1.%{snap}_MS3.7
 License:	GPL
 Group:		System/Servers
 URL:		https://www.oscommerce.com/
